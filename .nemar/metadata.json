@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "EEG Motor Movement/Imagery Dataset",
+  "description": "This dataset comprises over 1500 EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. Subjects performed 14 experimental runs including baseline recordings (eyes open/closed) and four motor tasks involving actual or imagined movement of the fists and feet, recorded using 64-channel EEG with the BCI2000 system. The dataset is designed to support brain-computer interface research and motor imagery classification studies.",
+  "methods_description": "EEG data were recorded from 109 subjects using a 64-channel BCI2000 system. Each subject completed 14 experimental runs consisting of two one-minute baseline runs (eyes open and eyes closed) and three two-minute runs each of four motor tasks: (1) actual left/right fist movement, (2) imagined left/right fist movement, (3) actual bilateral fist or foot movement, and (4) imagined bilateral fist or foot movement.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,44 @@
     "Niels Birbaumer": {},
     "Jonathan R Wolpaw": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004362.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "motor execution"
+    },
+    {
+      "term": "event-related desynchronization"
+    },
+    {
+      "term": "BCI2000"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "fist movement"
+    },
+    {
+      "term": "foot movement"
+    },
+    {
+      "term": "PhysioBank"
+    },
+    {
+      "term": "PhysioNet"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004362",
       "identifier_type": "URL",
@@ -36,70 +70,11 @@
       "identifier": "10.1109/TBME.2004.827072",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "12.0 GB (3625 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".event",
-    ".json",
-    ".loc",
-    ".m",
-    ".pdf",
-    ".set",
-    ".tsv",
-    ".txt",
-    ".yml"
-  ],
-  "description": "This dataset comprises over 1500 EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. Subjects performed 14 experimental runs including baseline recordings (eyes open/closed) and four motor tasks involving actual or imagined movement of the fists and feet, recorded using a 64-channel BCI2000 system. The dataset serves as a foundational resource for brain-computer interface research and motor imagery classification studies.",
-  "methods_description": "EEG data were recorded from 109 subjects using a 64-channel BCI2000 system. Each subject completed 14 experimental runs consisting of two one-minute baseline runs (eyes open and eyes closed) and three two-minute runs each of four motor tasks: (1) actual left/right fist movement, (2) imagined left/right fist movement, (3) actual bilateral fist or foot movement, and (4) imagined bilateral fist or foot movement.",
-  "keywords": [
-    {
-      "term": "EEG"
     },
     {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "motor execution"
-    },
-    {
-      "term": "BCI2000"
-    },
-    {
-      "term": "PhysioBank"
-    },
-    {
-      "term": "benchmark dataset"
-    },
-    {
-      "term": "fist movement"
-    },
-    {
-      "term": "foot movement"
-    },
-    {
-      "term": "bilateral movement"
-    },
-    {
-      "term": "baseline recording"
-    },
-    {
-      "term": "eyes open"
-    },
-    {
-      "term": "eyes closed"
+      "identifier": "10.18112/openneuro.ds004362.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -116,5 +91,25 @@
       "award_number": "EB000856"
     }
   ],
-  "source_hash": "d3fd5efdbd603c8f0585cc9495680fa56eacab20dead52b107b731ba5de8bad1"
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "12.0 GB (3625 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".event",
+    ".json",
+    ".loc",
+    ".m",
+    ".md",
+    ".pdf",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".yml"
+  ],
+  "source_hash": "a3a418e74d243dcebec1900cfe8ff10c6b8c39676efec5cea897d5be2a2c359d"
 }
