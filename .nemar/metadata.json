@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG Motor Movement/Imagery Dataset",
-  "description": "A collection of over 1500 one- and two-minute 64-channel EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. The tasks involved opening and closing the left or right fist, or both fists or both feet, either actually or imagined, along with eyes-open and eyes-closed baseline runs. Data were recorded with the BCI2000 system and support brain-computer interface research.",
-  "methods_description": "64-channel EEG was recorded with the BCI2000 system. Each subject completed 14 runs: two one-minute baseline runs (eyes open, eyes closed) and three two-minute runs of each of four tasks. The tasks were real or imagined fist movements, cued by a target on the left or right of the screen, and real or imagined movements of both fists or both feet, cued by a target at the top or bottom of the screen.",
+  "description": "A collection of over 1500 one- and two-minute 64-channel EEG recordings from 109 volunteers performing motor execution and motor imagery tasks. Recordings were made with the BCI2000 system. Each subject completed baseline eyes-open and eyes-closed runs and repeated runs of fist and feet movement and imagery tasks. The dataset is a BIDS-formatted curation of the original PhysioNet release.",
+  "methods_description": "64-channel EEG was recorded with the BCI2000 system while 109 subjects performed 14 runs: two one-minute baseline runs (eyes open, eyes closed) and three two-minute runs of each of four tasks. The tasks were opening and closing the left or right fist, imagining that movement, opening and closing both fists or both feet, and imagining that movement. Targets appeared on the screen to cue the movements.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,13 +21,18 @@
       "term": "motor imagery"
     },
     {
-      "term": "motor movement"
+      "term": "motor execution"
     },
     {
       "term": "brain-computer interface"
     },
     {
       "term": "BCI2000"
+    },
+    {
+      "term": "Imagination",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     },
     {
       "term": "Electroencephalography",
@@ -47,14 +52,19 @@
       "relation_type": "IsVersionOf"
     },
     {
-      "identifier": "10.18112/openneuro.ds004362.v1.0.0",
+      "identifier": "https://nemar.org/dataset/on004362",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.13026/C28G6P",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
     },
     {
-      "identifier": "https://nemar.org/dataset/on004362",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
+      "identifier": "10.18112/openneuro.ds004362.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -91,5 +101,5 @@
     ".txt",
     ".yml"
   ],
-  "source_hash": "a3a418e74d243dcebec1900cfe8ff10c6b8c39676efec5cea897d5be2a2c359d"
+  "source_hash": "c2a0a3c9e456265084c0ac7897ece9a3e446948a7e51fcaec26a667c9dbaac0d"
 }
